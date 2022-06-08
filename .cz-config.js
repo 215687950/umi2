@@ -7,8 +7,8 @@ module.exports = {
     { value: 'docs', name: 'docs:     文档新增/改动' },
     { value: 'style', name: 'style:    代码格式(不影响代码运行的变动)' },
     { value: 'refactor', name: 'refactor: 重构某个功能' },
-    { value: 'update', name: 'update:     更新某功能' },
-    { value: 'optimize', name: 'optimize:   优化构建工具或运行时性能' },
+    { value: 'update', name: 'update:   更新某功能' },
+    { value: 'optimize', name: 'optimize: 优化构建工具或运行时性能' },
     { value: 'chore', name: 'chore:    构建过程或辅助工具的变动' },
   ],
   // 消息步骤
