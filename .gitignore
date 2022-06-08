@@ -18,3 +18,6 @@
 /src/.umi-production
 /src/.umi-test
 /.env.local
+
+# eslint
+/eslint_log.log
