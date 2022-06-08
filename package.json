@@ -11,7 +11,8 @@
     "test:coverage": "umi-test --coverage"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
