@@ -3,10 +3,14 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
+    "build:test": "cross-env UMI_ENV=test umi build",
+    "build:pro": "cross-env UMI_ENV=pro umi build",
     "postinstall": "umi generate tmp",
+    "prepare": "husky install",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "eslint": "eslint 'src/**/*.{ts,js,tsx,jsx}' --fix -o eslint_log.log",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
+    "iconfont": "npx iconfont-h5",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
@@ -32,6 +36,8 @@
   },
   "dependencies": {
     "@ant-design/pro-layout": "^6.5.0",
+    "antd": "^4.21.0",
+    "axios": "^0.27.2",
     "react": "17.x",
     "react-dom": "17.x",
     "umi": "^3.5.25"
@@ -45,10 +51,12 @@
     "@typescript-eslint/parser": "^5.27.1",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.5.25",
+    "cross-env": "^7.0.3",
     "cz-customizable": "^6.3.0",
     "eslint": "^8.17.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
@@ -56,6 +64,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.0",
+    "react-iconfont-cli": "^2.0.2",
     "typescript": "^4.1.2",
     "yorkie": "^2.0.0"
   }

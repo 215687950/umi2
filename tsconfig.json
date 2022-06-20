@@ -12,17 +12,12 @@
     "strict": true,
     "paths": {
       "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
       "@@/*": ["src/.umi/*"]
     },
     "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "mock/**/*",
-    "src/**/*",
-    "config/**/*",
-    ".umirc.ts",
-    "typings.d.ts"
-  ],
+  "include": ["mock/**/*", "src/**/*", "config/**/*", ".umirc.ts", "typings.d.ts"],
   "exclude": [
     "node_modules",
     "lib",
